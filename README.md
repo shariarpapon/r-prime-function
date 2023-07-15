@@ -6,7 +6,9 @@ The function R(k) can be defined using a helper function Q(x) as follows:
 
 $$
 Q(x) = \prod_{n=1}^{n=x}{p_x}
+$$
 
+$$
 R(k) = \sum_{n=1}^{n=k} \frac{1}{Q(n)}
 $$
 
