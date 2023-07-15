@@ -15,5 +15,5 @@ Q(x) = \prod_{i=1}^{x}{p_i}
 $$
 
 $$
-\text{where pi is the ith prime}
+\text{where {p_i} is the {ith} prime}
 $$
