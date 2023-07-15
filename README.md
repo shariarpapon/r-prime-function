@@ -8,12 +8,11 @@ $$
 R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
 $$
 
-where Q(x) is defined as:
+Given the function Q(x):
 
 $$
 Q(x) = \prod_{i=1}^{x}{p_i}
-
-\text Hello world \text
+\text{where pi is the ith prime}
 $$
 
 
