@@ -19,8 +19,8 @@ R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
 $$
 
 
-The sum appears to converge at a value:
+I propose the value of the function ***R(k)*** will converge to a value  ***r*** as ***k*** approahces infinity:
 
 $$
-\lim_{{k \to \infty}}R(k) ~ 1.7052301717918
+\lim_{{k \to \infty}}R(k) = r
 $$
