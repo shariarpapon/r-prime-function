@@ -15,6 +15,6 @@ $$
 R(k) can be defined as follows:
 
 $$
-R(k) = 1 + \sum_{n=1}^{k} \frac{1}{\prod_{i=1}^{n}{p_i}}
+R(k) = 1 + \sum_{n=1}^{k} \frac{1}{(\prod_{i=1}^{n}{p_i})}
 $$
 
