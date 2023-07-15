@@ -18,3 +18,9 @@ $$
 R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
 $$
 
+
+The sum appears to converge at a value:
+
+$$
+\lim_{{k \to \infty}}R(k) ~ 1.7052301717918
+$$
