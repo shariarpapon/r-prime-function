@@ -15,7 +15,10 @@ $$
 R(k) can be defined as follows:
 
 $$
-R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
+R(k) = 1 + \sum_{n=1}^{k} \frac{1}{\prod_{i=1}^{n}{p_i}}
 $$
 
 
+git add .
+git commit -m "updated"
+git push origin main
