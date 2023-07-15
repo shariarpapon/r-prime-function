@@ -6,8 +6,6 @@ The function can be defined as follows:
 
 $$
 R(k) = \sum_{n=1}^{n=k} \frac{1}{p_1 \cdot p_2 \cdot p_3 \cdot \ldots \cdot p_n}
-
-\text{ (Where {p_n} is the {nth} prime number.} N \text
 $$
 
 
