@@ -5,11 +5,11 @@
 The function R(k) can be defined using a helper function Q(x) as follows:
 
 $$
-Q(x) = \prod_{i=1}^{i=x}{p_i}
+Q(x) = \prod_{i=1}^{x}{p_i}
 $$
 
 $$
-R(k) = 1 + \sum_{n=1}^{n=k} \frac{1}{Q(n)}
+R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
 $$
 
 
