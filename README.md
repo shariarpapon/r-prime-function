@@ -12,6 +12,7 @@ Given the function Q(x):
 
 $$
 Q(x) = \prod_{i=1}^{x}{p_i}
+\\
 \text{where pi is the ith prime}
 $$
 
