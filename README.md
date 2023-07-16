@@ -7,8 +7,9 @@ The RPrime function R(k) is formally defined below:
 Given the helper function Q(x):
 
 $$
-Q(x) = \prod_{i=1}^{x}{p_i}
+Q(x) = \prod_{i=1, pi \elem}^{x}{p_i}
 $$
+
 $$
 \text{where } {p_i} \text{ is the } {ith} \text{ prime number.}
 $$
