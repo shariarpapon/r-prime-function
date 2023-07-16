@@ -21,6 +21,7 @@ R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
 $$
 
 R(k) can be further modified to the following form:
+
 $$
 R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
 $$
@@ -32,3 +33,7 @@ $$
 $$
 
 Experiemnetally r &asymp; *1.7052301717918*
+
+git add .
+git commit -m "updated formula"
+git push origin main
