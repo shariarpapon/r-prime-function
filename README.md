@@ -20,7 +20,7 @@ $$
 R(k) = 1 + \sum_{n=1}^{k} \frac{1}{Q(n)}
 $$
 
-R(k) can be further modified to the following form:
+R(k) can be further expanded to the following form:
 
 $$
 R(k) = \left(\frac{1}{Q(k)}\right)\left(-1 + Q(k) - \sum_{n=1}^{k-1} \frac{Q(k)}{Q(k-n)}\right)
