@@ -9,7 +9,6 @@ Given the helper function Q(x):
 $$
 Q(x) = \prod_{i=1}^{x}{p_i}
 $$
-
 $$
 \text{where } {p_i} \text{ is the } {ith} \text{ prime number.}
 $$
