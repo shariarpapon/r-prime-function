@@ -2,17 +2,21 @@ using System;
 
 public static class RPrimeFunction
 {
-    static void PrintOutput(int n)
+    static int[] primes;
+
+    static void Main()
     {
-        double r = CalculateRPrime(n);
-        Console.WriteLine($"The value of RPrime for n = {n} is approximately: {r}");
+        int n = 10000;
+        primes = GeneratePrimes(n);
+
+        double r = R_O(n);
+        Console.WriteLine($"R_Original: {R_O(n)}");
+        Console.WriteLine($"R_Expanded: {R_E(n)}");
     }
 
-    static double CalculateRPrime(int n)
+    static double R_O(int n)
     {
         double r = 0.0;
-        int[] primes = GeneratePrimes(n);
-
         double product = 1.0;
         for (int i = 0; i < n; i++)
         {
@@ -21,6 +25,29 @@ public static class RPrimeFunction
         }
 
         return 1 + r;
+    }
+
+
+    static double R_E(int k)
+    {
+        double q_k = Q(k);
+        double s = 0;
+        for (int n = 1; n <= k - 1; n++)
+        {
+            s += q_k / Q(k - n);
+        }
+
+        return ((double)1 / q_k) * (1 + q_k + s);
+    }
+
+    static int Q(int x)
+    {
+        int p = 1;
+        for (int i = 0; i < x; i++)
+        {
+            p *= primes[i];
+        }
+        return p;
     }
 
     // Method to generate the first 'n' prime numbers
