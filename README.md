@@ -23,7 +23,7 @@ $$
 R(k) can be further modified to the following form:
 
 $$
-R(k) = (\frac{1}{Q(k)})*(Q(k) - \sum_{n=1}^{k-1} \frac{Q(k)}{Q(k-n)} - 1)
+R(k) = (\frac{1}{Q(k)})\left(Q(k) - \sum_{n=1}^{k-1} \frac{Q(k)}{Q(k-n)} - 1\right)
 $$
 
 I propose the value of the function *R(k)* will converge to a value *r* as *k* approahces infinity:
