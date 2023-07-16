@@ -29,7 +29,7 @@ $$
 I propose the value of the function *R(k)* will converge to a value *r* as *k* approahces infinity:
 
 $$
-\lim_{{k \to \infty}}R(k) = r
+\lim_{{h \to \infty}}R(h) = r
 $$
 
 Experiemnetally r &asymp; *1.7052301717918*
