@@ -35,15 +35,6 @@ $$
 Experiemnetally r &asymp; *1.7052301717918*
 
 
-$$
-1 + \frac{1}{p_1} + \frac{1}{p_1p_2} + \frac{1}{p_1p_2p_3} + ...\frac{1}{p_1p_2...p_n}
-$$
-
-$$
-\text{where } {p_n} \text{ is the } {nth} \text{ prime number.}
-$$
-
-
 <!-- 
 git add .
 git commit -m "updated formula"
