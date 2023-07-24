@@ -36,7 +36,7 @@ Experiemnetally r &asymp; *1.7052301717918*
 
 
 $$
-1 + \frac{1}{p_1} + \frac{1}{p_1 * p_2} + \frac{1}{p_1 * p_2 * p_3} + ...\frac{1}{p_1...p_n}
+1 + \frac{1}{p_1} + \frac{1}{p_1p_2} + \frac{1}{p_1p_2p_3} + ...\frac{1}{p_1p_2...p_n}
 $$
 
 $$
