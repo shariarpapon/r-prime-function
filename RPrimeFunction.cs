@@ -3,15 +3,19 @@ using System;
 public static class RPrimeFunction
 {
     static int[] primes;
+    static int[] primePartialProducts;
 
     static void Main()
     {
-        int n = 10000;
-        primes = GeneratePrimes(n);
+        int roInput = 150000;
+        int reInput = 150000;
+        int largerInput = (reInput >= roInput ? reInput : roInput) + 1;
 
-        double r = R_O(n);
-        Console.WriteLine($"R_Original: {R_O(n)}");
-        Console.WriteLine($"R_Expanded: {R_E(n)}");
+        primes = GeneratePrimes(largerInput);
+        primePartialProducts = GeneratePrimePartialProducts(largerInput, primes);
+
+        Console.WriteLine($"Ro({roInput}) = {R_O(roInput)}");
+        Console.WriteLine($"Re({reInput}) = {R_E(reInput)}");
     }
 
     static double R_O(int n)
@@ -27,27 +31,29 @@ public static class RPrimeFunction
         return 1 + r;
     }
 
+    static double Q(int x) => (double)primePartialProducts[x];
 
     static double R_E(int k)
     {
         double q_k = Q(k);
         double s = 0;
-        for (int n = 1; n <= k - 1; n++)
+        for (int n = 1; n <= k; n++)
         {
             s += q_k / Q(k - n);
         }
-
         return ((double)1 / q_k) * (1 + q_k + s);
     }
 
-    static int Q(int x)
+    static int[] GeneratePrimePartialProducts(int x, int[] primes)
     {
         int p = 1;
+        int[] partialProducts = new int[x];
         for (int i = 0; i < x; i++)
         {
             p *= primes[i];
+            partialProducts[i] = p;
         }
-        return p;
+        return partialProducts;
     }
 
     // Method to generate the first 'n' prime numbers
